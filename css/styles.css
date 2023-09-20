@@ -9,6 +9,8 @@
     --color-border: #e7e9fc;
     --color-light-slate: #8E8F99;  
     --color-green: #31D0AA;
+    --color-bg-modal: #FCFCFC;
+    --color-navyblue-modal: #2E2F4240;
 }
 
 body {
@@ -479,3 +481,46 @@ a {
     background-color: var(--color-green);
 }
 
+/* ---------Modal------ */
+
+.backdrop {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: none;
+    background-color: var(--color-navyblue-modal);
+}
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    position: relative;
+    width: 408px;
+    background-color: var(--color-bg-modal);
+    border-radius: 4px;
+    padding: 24px;
+
+}
+
+.modal-close {
+    position: absolute;
+    top:24px;
+    right: 24px;
+    border-radius: 50%;
+}
+
+.text-form {
+    color: var(--color-navyblue);
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.contact-form {}
