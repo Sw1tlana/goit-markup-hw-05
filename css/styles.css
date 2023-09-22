@@ -480,15 +480,21 @@ a {
 .social-link-media:focus {
     background-color: var(--color-green);
 }
-.container-form-footer {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  margin-left: 80px;
+
+/* Form footer*/
+
+.form-footer-container {
+   display: flex;
+   flex-direction: column;
+}
+
+.footer-input-container {
+   display: flex;
+   margin-left: 80px;
+  
 }
 
 .form-footer-label {
-    display: block;
     color: var(--color-light);
     font-weight: 500;
     line-height: 1.5;
@@ -509,9 +515,27 @@ a {
     color: var(--color-light);
 }
 
-.form-footer-link {}
 
-.form-footer-icon {}
+.form-footer-link {
+    position: relative;
+    color: var(--color-light);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    padding: 8px 24px;
+    border-radius: 4px;
+    background: var(--color-iris);
+    margin-left: 24px;
+}
+
+.form-footer-icon {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+    fill: var(--color-light);
+    
+}
 
 
 
@@ -576,8 +600,6 @@ a {
     font-weight: 500;
     line-height: 1.5;
 }
-
-.contact-form {}
 
 
 .modal-field {

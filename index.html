@@ -509,24 +509,28 @@
           </ul>
         </div>
 
-        <div class="container-form-footer">
-          <form name="form-footer">
-            <label class="form-footer-label" for="user-email">Subscribe</label>
-            <input
-              class="form-footer-input"
-              type="email"
-              id="user-email"
-              name="email"
-              placeholder="E-mail"
-            />
-            <a class="form-footer-link" href=""
-              >Subscribe
+        <form name="form-footer">
+          <div class="footer-input-container">
+            <div class="form-footer-container">
+              <label class="form-footer-label" for="user-email"
+                >Subscribe</label
+              >
+              <input
+                class="form-footer-input"
+                type="email"
+                id="user-email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </div>
+            <a class="form-footer-link" href="">
+              Subscribe
               <svg class="form-footer-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-telegram"></use>
               </svg>
             </a>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </footer>
 
@@ -540,7 +544,7 @@
           </svg>
         </button>
         <p class="text-form">Leave your contacts and we will call you back</p>
-        <form class="contact-form">
+        <form name="contact-form">
           <div class="modal-field">
             <label class="modal-label" for="user-name">Name</label>
             <div class="modal-input-container">
