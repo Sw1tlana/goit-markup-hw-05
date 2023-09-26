@@ -526,7 +526,6 @@ a {
     min-width: 165px;
     height: 40px;
     display: flex;
-    justify-content: center;
     align-items: center;
     cursor: pointer;
     color: var(--color-light);
@@ -631,7 +630,6 @@ a {
 .text-form {
     color: var(--color-navyblue);
     text-align: center;
-    font-family: Roboto;
     font-weight: 500;
     line-height: 1.5;
     margin-bottom: 16px;
